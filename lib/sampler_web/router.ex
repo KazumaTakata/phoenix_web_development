@@ -19,6 +19,8 @@ defmodule SamplerWeb.Router do
 
     get("/", PageController, :index)
     get("/polls", PollController, :index)
+    get("/polls/new", PollController, :new)
+    post("/polls", PollController, :create)
   end
 
   # Other scopes may use custom stacks.
